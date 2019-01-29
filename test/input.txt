@@ -28,17 +28,26 @@
   add Valid Name p/12345 e/notAnEmail
 
   # should add correctly
-  add Adam Brown p/111111 e/adam@gmail.com
+  add Esther Potato p/555555 e/esther@notreal.potato
   list
-  add Betsy Choo p/222222 e/benchoo@nus.edu.sg
+  add Dickson Ee e/dickson@nus.edu.sg p/444444
   list
 
   # order of phone and email should not matter
   add Charlie Dickson e/charlie.d@nus.edu.sg p/333333
   list
-  add Dickson Ee e/dickson@nus.edu.sg p/444444
+  add Betsy Choo p/222222 e/benchoo@nus.edu.sg
   list
-  add Esther Potato p/555555 e/esther@notreal.potato
+  add Adam Brown p/111111 e/adam@gmail.com
+  list
+
+##########################################################
+# test sort command
+##########################################################
+
+  # should list in alphabetical order
+  sort
+  # should list in original order
   list
 
 ##########################################################
