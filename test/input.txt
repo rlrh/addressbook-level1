@@ -51,8 +51,28 @@
   list
 
 ##########################################################
+# test edit command
+##########################################################
+
+  # should catch invalid args format
+  edit
+  edit should be
+
+  # should catch invalid index
+  edit -1
+  edit 10 Dummy p/111111 e/dummy@nus.edu.sg
+
+  # edits correctly
+  edit 5 Adamson Brown p/111111 e/a.brown@nus.edu.sg
+
+  # order of phone and email should not matter
+  edit 3 Charlie Dickson e/c.dickson@nus.edu.sg p/333333
+
+##########################################################
 # test find persons command
 ##########################################################
+
+  list
 
   # should match none with no keywords
   find
@@ -60,7 +80,7 @@
   find bet
   # does not match if none have keyword
   find 23912039120
-  # matching should be case-sensitive
+  # matching should not be case-sensitive
   find betsy
 
   # find unique keyword
