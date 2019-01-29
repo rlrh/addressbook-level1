@@ -18,6 +18,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Scanner;
@@ -144,6 +145,10 @@ public class AddressBook {
     private static final int PERSON_DATA_INDEX_NAME = 0;
     private static final int PERSON_DATA_INDEX_PHONE = 1;
     private static final int PERSON_DATA_INDEX_EMAIL = 2;
+
+    private static final String PERSON_PROPERTY_NAME = "name";
+    private static final String PERSON_PROPERTY_PHONE = "phone";
+    private static final String PERSON_PROPERTY_EMAIL = "email";
 
     /**
      * The number of data elements for a single person.
